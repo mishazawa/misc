@@ -85,12 +85,4 @@ void draw() {
   }
   
   next_gen();
-   
-
-  //for (int i = 0; i < GRID_X;i++) {
-  //  for (int j = 0; j < GRID_Y;j++) {
-  //      fill(random(i*j));
-  //      rect(i * SIZE, j*SIZE, SIZE, SIZE);
-  //  }
-  //}
 }
