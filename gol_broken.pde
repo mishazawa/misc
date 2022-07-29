@@ -1,5 +1,3 @@
-PGraphics pg;
-
 int SIZE = 10;
 int GRID_X = 100;
 int GRID_Y = 100;
@@ -95,18 +93,7 @@ void setup() {
   randomSeed(SEED);
   frameRate(1);
   noStroke();
-  
-  // -----------
   initCells();
-  
-  //// tmp
-  //int a = 1;
-  //Cell c = cells.get(a);
-  
-  //c.is_dead=false;;
-  
-  //cells.set(a, c);
-  
 }
 
 void draw() {
@@ -121,10 +108,4 @@ void draw() {
   for (Cell c: cells) {
     c.next_state();
   }
-  //for (int i = 0; i < GRID_X;i++) {
-  //  for (int j = 0; j < GRID_Y;j++) {
-  //      fill(random(i*j));
-  //      rect(i * SIZE, j*SIZE, SIZE, SIZE);
-  //  }
-  //}
 }
